@@ -6,3 +6,27 @@
 делителя.
 """
 
+print('Введите 2 числа и команду: {0, +, -, *, /}')
+
+while True:
+    command_str = input('Введите команду: ')
+
+    if command_str == '0':
+        break
+    else:
+        a = int(input('Введите первое число: '))
+        b = int(input('Введите второн число: '))
+
+        if command_str == '+':
+            print(f'{a + b}')
+        elif command_str == '-':
+            print(f'{a - b}')
+        elif command_str == '*':
+            print(f'{a * b}')
+        elif command_str == '/':
+            if b == 0:
+                print('Нельзя делить на ноль')
+            else:
+                print(f'{a / b}')
+        else:
+            print('Введена неверная команда, повторите ввод.')
