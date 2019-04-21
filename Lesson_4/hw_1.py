@@ -48,12 +48,12 @@ def find_maximum_element_below_zero_in_array2(a):
 
 
 def test_function_main():
-    a = generate_array(10000, 100)
+    a = generate_array(100, 100)
     find_maximum_element_below_zero_in_array(a)
 
 
 def test_function_main2():
-    a = generate_array(10000, 100)
+    a = generate_array(100, 100)
     find_maximum_element_below_zero_in_array2(a)
 
 
